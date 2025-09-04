@@ -16,6 +16,6 @@ A sample of robot framework when running automation testing on mobile and serve 
 
 Clone the repo:
 
-```bash
+[```bash](https://github.com/nguyenvancuong1209/Practice-RPA.git)
 
 
