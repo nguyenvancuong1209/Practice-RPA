@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.4 on win32)" generated="2025-07-15T13:36:52.171980" rpa="false" schemaversion="5">
+<suite id="s1" name="Poems3" source="D:\Poems3">
+<suite id="s1-s1" name="Tests" source="D:\Poems3\tests">
+<suite id="s1-s1-s1" name="Login logout" source="D:\Poems3\tests\Login_logout">
+<suite id="s1-s1-s1-s1" name="AND test" source="D:\Poems3\tests\Login_logout\AND_test.robot">
+<test id="s1-s1-s1-s1-t1" name="Đăng Nhập Thành Công Trên Thiết Bị Thật" line="8">
+<kw name="Open App Android" owner="login_keywords">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>noReset=${NO_RESET}</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-07-15T13:36:52.319091" elapsed="4.779458"/>
+</kw>
+<status status="PASS" start="2025-07-15T13:36:52.318242" elapsed="4.780614"/>
+</kw>
+<kw name="Input Login Credentials Android" owner="login_keywords">
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-07-15T13:36:57.102191" level="INFO">Typing text '0000000 timeout=100s' into text field 'com.tdt.pmobile3.p2:id/edtInputAccount'</msg>
+<msg time="2025-07-15T13:36:57.679448" level="INFO">criteria is com.tdt.pmobile3.p2:id/edtInputAccount</msg>
+<arg>${USERNAME_FIELD_ANDROID}</arg>
+<arg>${USERNAME} timeout=100s</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-07-15T13:36:57.100105" elapsed="0.579862"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-07-15T13:36:57.683148" level="INFO">Typing text 'Phillip1' into text field 'com.tdt.pmobile3.p2:id/ctContentPassWord'</msg>
+<msg time="2025-07-15T13:36:59.307894" level="INFO">criteria is com.tdt.pmobile3.p2:id/ctContentPassWord</msg>
+<arg>${PASSWORD_FIELD_ANDROID}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-07-15T13:36:57.680286" elapsed="1.628267"/>
+</kw>
+<status status="PASS" start="2025-07-15T13:36:57.099513" elapsed="2.209324"/>
+</kw>
+<kw name="Tap Login Button Android" owner="login_keywords">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-07-15T13:36:59.312183" level="INFO">Clicking element 'com.tdt.pmobile3.p2:id/buttonPlaceholder'.</msg>
+<msg time="2025-07-15T13:36:59.878949" level="INFO">criteria is com.tdt.pmobile3.p2:id/buttonPlaceholder</msg>
+<arg>${LOGIN_BUTTON_ANDROID}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-07-15T13:36:59.310350" elapsed="0.568911"/>
+</kw>
+<status status="PASS" start="2025-07-15T13:36:59.309708" elapsed="0.569688"/>
+</kw>
+<kw name="Login Should Be Successful Android" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-07-15T13:37:03.813809" level="INFO">criteria is com.tdt.pmobile3.p2:id/btn_ask_ai
+criteria is com.tdt.pmobile3.p2:id/btn_ask_ai
+criteria is com.tdt.pmobile3.p2:id/btn_ask_ai
+criteria is com.tdt.pmobile3.p2:id/btn_ask_ai</msg>
+<arg>${SUCCESS_ELEMENT_ANDROID}</arg>
+<arg>timeout=100s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-07-15T13:36:59.880098" elapsed="3.934115"/>
+</kw>
+<status status="PASS" start="2025-07-15T13:36:59.879745" elapsed="3.934675"/>
+</kw>
+<status status="PASS" start="2025-07-15T13:36:52.316967" elapsed="11.497949"/>
+</test>
+<test id="s1-s1-s1-s1-t2" name="Đăng Xuất Thành Công Trên Thiết Bị Thật" line="14">
+<kw name="Tap on me tab Android" owner="login_keywords">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-07-15T13:37:03.819905" level="INFO">Clicking element 'com.tdt.pmobile3.p2:id/item_me'.</msg>
+<msg time="2025-07-15T13:37:03.972428" level="INFO">criteria is com.tdt.pmobile3.p2:id/item_me</msg>
+<arg>${TAP_ME_TAB_ANDROID}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-07-15T13:37:03.817895" elapsed="0.154993"/>
+</kw>
+<status status="PASS" start="2025-07-15T13:37:03.817210" elapsed="0.155867"/>
+</kw>
+<kw name="Tap on settings icon Android" owner="login_keywords">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-07-15T13:37:03.975832" level="INFO">Clicking element 'com.tdt.pmobile3.p2:id/btnSetting'.</msg>
+<msg time="2025-07-15T13:37:05.310181" level="INFO">criteria is com.tdt.pmobile3.p2:id/btnSetting</msg>
+<arg>${TAP_SETTINGS_ICON_ANDROID}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-07-15T13:37:03.974291" elapsed="1.336284"/>
+</kw>
+<status status="PASS" start="2025-07-15T13:37:03.973811" elapsed="1.336920"/>
+</kw>
+<kw name="Tap on logout button Android" owner="login_keywords">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-07-15T13:37:05.313234" level="INFO">Clicking element 'com.tdt.pmobile3.p2:id/btnLogout'.</msg>
+<msg time="2025-07-15T13:37:06.004523" level="INFO">criteria is com.tdt.pmobile3.p2:id/btnLogout</msg>
+<arg>${TAP_LOGOUT_BUTTON_ANDROID}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-07-15T13:37:05.311955" elapsed="0.692972"/>
+</kw>
+<status status="PASS" start="2025-07-15T13:37:05.311330" elapsed="0.693724"/>
+</kw>
+<kw name="Accept logout dialog Android" owner="login_keywords">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-07-15T13:37:06.006996" level="INFO">Clicking element 'com.tdt.pmobile3.p2:id/btnPositive'.</msg>
+<msg time="2025-07-15T13:37:06.871955" level="INFO">criteria is com.tdt.pmobile3.p2:id/btnPositive</msg>
+<arg>${TAP_OK_BUTTON_ANDROID}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-07-15T13:37:06.005788" elapsed="0.866541"/>
+</kw>
+<status status="PASS" start="2025-07-15T13:37:06.005351" elapsed="0.867147"/>
+</kw>
+<kw name="Logout Should Be Successful Android" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-07-15T13:37:08.813358" level="INFO">criteria is com.tdt.pmobile3.p2:id/tvLoginAccountScreen</msg>
+<arg>${SUCCESS_ELEMENT_LOGOUT_ANDROID}</arg>
+<arg>timeout=100s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-07-15T13:37:06.873327" elapsed="1.940549"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2025-07-15T13:37:08.814065" elapsed="0.329156"/>
+</kw>
+<status status="PASS" start="2025-07-15T13:37:06.872828" elapsed="2.270589"/>
+</kw>
+<status status="PASS" start="2025-07-15T13:37:03.816181" elapsed="5.327893"/>
+</test>
+<status status="PASS" start="2025-07-15T13:36:52.197415" elapsed="16.948666"/>
+</suite>
+<status status="PASS" start="2025-07-15T13:36:52.194808" elapsed="16.952924"/>
+</suite>
+<status status="PASS" start="2025-07-15T13:36:52.192246" elapsed="16.956747"/>
+</suite>
+<status status="PASS" start="2025-07-15T13:36:52.175619" elapsed="16.974392"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Poems3" id="s1" pass="2" fail="0" skip="0">Poems3</stat>
+<stat name="Tests" id="s1-s1" pass="2" fail="0" skip="0">Poems3.Tests</stat>
+<stat name="Login logout" id="s1-s1-s1" pass="2" fail="0" skip="0">Poems3.Tests.Login logout</stat>
+<stat name="AND test" id="s1-s1-s1-s1" pass="2" fail="0" skip="0">Poems3.Tests.Login logout.AND test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
