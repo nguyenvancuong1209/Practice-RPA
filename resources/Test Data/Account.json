@@ -1,0 +1,31 @@
+{
+    "User": {
+        "user1": {
+            "username": "user1",
+            "password": "password1",
+            "displayName": "John Doe",
+            "email": "john.doe@example.com"
+        },
+        "user2": {
+            "username": "user2",
+            "password": "password2",
+            "displayName": "Jane Smith",
+            "email": "jane.smith@example.com"
+        },
+        "user3": {
+            "username": "0000000",
+            "password": "Phillip1",
+            "displayName": "Jane Smith",
+            "email": ""
+        }
+    },
+    "Admin": {
+        "admin1": {
+            "username": "admin",
+            "password": "admin123",
+            "displayName": "Administrator",  
+            "email": "admin@example.com"
+        }
+        
+    }
+}

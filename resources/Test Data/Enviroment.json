@@ -1,0 +1,31 @@
+{
+    "Android_Emulator": {
+        "remote_url": "http://127.0.0.1:4723",
+        "automationName": "UiAutomator2",
+        "deviceName": "emulator-5554",
+        "platformName": "Android",
+        "platformVersion": "16",
+        "appPackage": "tdt.rpa.login.app",
+        "appActivity": "tdt.rpa.login.app.MainActivity"
+    },
+    "iOS_Emulator": {
+        "remote_url": "http://127.0.0.1:4723",
+        "automationName": "XCUITest",
+        "platformName": "iOS",
+        "deviceName": "iPhone 16 pro",
+        "udid": "E591EB98-D300-4723-95E5-745ED17EDEAD",
+        "platformVersion": "17.5",
+        "app": "rpa.ios.ex.app.RPAExampleApp",
+        "noReset": "false",
+        "useNewWDA": "true"
+    },
+    "Android_Real": {
+        "remote_url": "http://localhost:4723/wd/hub",
+        "automationName": "UiAutomator2",
+        "deviceName": "P11274001673",
+        "platformName": "Android",
+        "platformVersion": "16",
+        "appPackage": "com.tdt.pmobile3.p2",
+        "appActivity": "com.tdt.pmobile3.app.SplashActivity"
+    }
+}
