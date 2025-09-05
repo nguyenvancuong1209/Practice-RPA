@@ -73,15 +73,18 @@ Read Android Real
     ${platform_version} =    Get From Dictionary    ${android_real}    platformVersion
     ${app_package} =    Get From Dictionary    ${android_real}    appPackage
     ${app_activity} =    Get From Dictionary    ${android_real}    appActivity
-    
+    ${new_command_timeout} =    Get From Dictionary    ${android_real}    newCommandTimeout    
+    ${timeout} =    Get From Dictionary    ${android_real}    timeout    
+
     ${Android_Real} =    Create Dictionary    
     ...    remote_url=${remote_url}    
     ...    automation_name=${automation_name}    
     ...    device_name=${device_name}    
     ...    platform_name=${platform_name} 
     ...    app_package=${app_package}    
-    ...    app_activity=${app_activity}
-    Log    ${remote_url}
+    ...    app_activity=${app_activity} 
+    ...    new_command_timeout=${new_command_timeout}
+    ...    timeout=${timeout}
     RETURN    ${Android_Real}
 
 Get User Account
@@ -94,18 +97,5 @@ Get User Account
     
     ${username} =    Get From Dictionary    ${user_account}    username
     ${password} =    Get From Dictionary    ${user_account}    password
-    
-    RETURN    ${username}    ${password}
-
-Get Admin Account
-    [Arguments]    ${account_name}
-    File Should Exist    ${ACCOUNT_FILE}
-    ${json_text} =    Get File    ${ACCOUNT_FILE}
-    ${json_data} =    Evaluate    json.loads(${json_text})
-    ${admins} =    Get From Dictionary    ${json_data}    Admin
-    ${admin_account} =    Get From Dictionary    ${admins}    ${account_name}
-    
-    ${username} =    Get From Dictionary    ${admin_account}    username
-    ${password} =    Get From Dictionary    ${admin_account}    password
     
     RETURN    ${username}    ${password}

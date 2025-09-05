@@ -26,6 +26,8 @@
         "platformName": "Android",
         "platformVersion": "16",
         "appPackage": "com.tdt.pmobile3.p2",
-        "appActivity": "com.tdt.pmobile3.app.SplashActivity"
+        "appActivity": "com.tdt.pmobile3.app.SplashActivity",
+        "newCommandTimeout": 300,
+        "timeout": 300
     }
 }

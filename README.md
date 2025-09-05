@@ -1,7 +1,3 @@
-# Robot Framework Practice on Mobile App
-
-A sample of robot framework when running automation testing on mobile and serve as template for automation testing using robot framework test on mobile
-
 ## Features
 
 - Login
@@ -17,5 +13,11 @@ A sample of robot framework when running automation testing on mobile and serve 
 Clone the repo:
 
 ```bash
+git clone https://github.com/nguyenvancuong1209/Practice-RPA.git
 
+## Khởi tạo appium server
+appium server --base-path /wd/hub
 
+## Run test
+```bash
+robot -d ./logs -L DEBUG ./tests/Login_logout/AND_test.robot

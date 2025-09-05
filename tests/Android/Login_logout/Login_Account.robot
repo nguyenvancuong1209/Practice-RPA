@@ -5,7 +5,7 @@ Resource    keywords/Android/login_keywords.robot
 
 
 *** Test Cases ***
-Đăng nhập không thành công do sai username
+Login failed due to incorrect username
     Open Android Real
     User tap login button Notification
     User tap login button Start
@@ -13,22 +13,21 @@ Resource    keywords/Android/login_keywords.robot
     User input wrong username
     User input password
     User tap login button
-    Error message displayed
+    Error message login failed
 
-Đăng nhập không thành công do sai password
+Login failed due to incorrect password
     User input username
     User input wrong password
     User tap login button
-    Error message displayed
+    Error message login failed
 
-Đăng nhập không thàng công so sai User Name và Password
+Login failed due to incorrect Username and Password
     User input wrong username
     User input wrong password
     User tap login button
-    Error message displayed
+    Error message login failed
 
-Đăng Nhập Thành Công Trên Thiết Bị Thật
-    Open Android Real
+Login Successfully On Real Device
     Load User Account to Login
     User input username
     User input password

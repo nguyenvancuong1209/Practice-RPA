@@ -35,4 +35,6 @@ Open Android Real
     ...    platformName=${Android_Real["platform_name"]}
     ...    appPackage=${Android_Real["app_package"]}
     ...    appActivity=${Android_Real["app_activity"]}
+    ...    newCommandTimeout=${Android_Real["new_command_timeout"]}
+    ...    timeout=${Android_Real["timeout"]}
 
