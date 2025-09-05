@@ -27,7 +27,7 @@ Login failed due to incorrect Username and Password
     User tap login button
     Error message login failed
 
-Login Successfully On Real Device
+Login Successfully Account On Real Device
     Load User Account to Login
     User input username
     User input password

@@ -12,6 +12,10 @@ Load User Account to Login
     Set Suite Variable    ${User_Name}
     Set Suite Variable    ${Password}
 
+Load User Email to Login
+    ${User_Name}    ${Password}=    Get User Account    user2
+    Set Suite Variable    ${User_Name}
+    Set Suite Variable    ${Password}
 
 User input username
     Wait Until Element Is Visible    ${USERNAME_FIELD_ANDROID}
