@@ -11,9 +11,9 @@ Login Successfully On Real Device
     User tap login button Notification
     User tap login button Start
     Load User Account to Login
-    User input username
-    User input password
-    User tap login button
+    User input username by account
+    User input password by account
+    User tap login button by account
 
 User tap search button
     User tap search button
