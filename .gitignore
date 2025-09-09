@@ -1,3 +1,40 @@
-results/log.html
-results/report.html
-results/output.xml
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# Robot Framework reports and logs
+output.xml
+report.html
+log.html
+debug.log
+*.png
+*.jpg
+*.jpeg
+
+# Allure reports (nếu dùng Allure)
+allure-results/
+allure-report/
+
+# Temporary files
+*.log
+*.tmp
+
+# Jupyter Notebook (nếu có dùng)
+.ipynb_checkpoints/
+
+# IDE configs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
